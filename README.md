@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Construction & Design Website
+
+A modern, responsive website for our construction and design business built with TypeScript, React, and Tailwind CSS.
+
+## About
+
+This website showcases our construction and design services, featuring our portfolio of completed projects and providing an easy way for potential clients to get in touch with us.
+
+## Features
+
+- **Homepage** - Introduction to our business and what we offer
+- **Process** - Overview of how we work with clients
+- **Portfolio** - Showcase of our completed projects
+- **Contact** - Easy ways for clients to reach out
+
+## Tech Stack
+
+- **TypeScript** - Type-safe JavaScript development
+- **React** - Modern UI framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Responsive Design** - Mobile-friendly across all devices
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone [your-repo-url]
+cd construction-website
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── layout.js                    # Main layout component
+├── page.js                      # Home page
+├── dashboard/                   # Dashboard pages
+│   ├── layout.js               # Dashboard layout
+│   └── page.js                 # Dashboard main page
+├── api/                        # API routes
+│   ├── auth/                   # Authentication endpoints
+│   ├── lead/                   # Lead management endpoints
+│   ├── stripe/                 # Stripe payment endpoints
+│   └── webhook/                # Webhook handlers
+├── blog/                       # Blog pages
+├── privacy-policy/             # Privacy policy page
+├── tos/                        # Terms of service page
+├── error.js                    # Error handling component
+├── not-found.js               # 404 page component
+└── globals.css                # Global CSS styles
 
-## Learn More
+components/
+├── LayoutClient.js            # Client-side layout wrapper
+├── Header.js                  # Main header component
+├── Footer.js                  # Main footer component
+├── Hero.js                    # Hero section component
+├── Pricing.js                 # Pricing section component
+├── ButtonAccount.js           # Account button component
+├── ButtonCheckout.js          # Checkout button component
+├── ButtonSignIn.js            # Sign in button component
+├── ButtonSupport.js           # Support button component
+├── ButtonLead.js              # Lead generation button
+├── ButtonPopover.js           # Popover button component
+├── ButtonGradient.js          # Gradient style button
+├── Modal.js                   # Modal dialog component
+├── Tabs.js                    # Tabs navigation component
+├── FeaturesGrid.js            # Features grid display
+├── FeaturesAccordion.js       # Features accordion component
+├── FeaturesList.js            # Features list component
+├── Testimonials1.js           # Testimonials style 1
+├── Testimonials3.js           # Testimonials style 3
+├── Testimonials11.js          # Testimonials style 11
+├── TestimonialsSmall.js       # Small testimonial component
+├── TestimonialsAvatars.js     # Testimonials with avatars
+├── TestimonialRating.js       # Testimonial with rating
+├── WithWithout.js             # Comparison component
+├── CTA.js                     # Call to action component
+├── Problem.js                 # Problem statement component
+├── FAQ.js                     # FAQ component
+└── BetterIcon.js              # Enhanced icon component
 
-To learn more about Next.js, take a look at the following resources:
+libs/
+├── mongo.js                   # MongoDB connection
+├── mongoose.js                # Mongoose ORM setup
+├── next-auth.js               # NextAuth authentication setup
+├── api.js                     # API utilities
+├── resend.js                  # Email sending functionality
+├── stripe.js                  # Stripe integration
+├── seo.js                     # SEO utilities
+└── gpt.js                     # OpenAI GPT integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+models/
+├── User.js                    # User data model
+├── Lead.js                    # Lead data model
+└── plugins/                   # Mongoose plugins
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+public/
+├── blog/                      # Blog static assets
+├── robots.txt                 # Robots crawl instructions
+├── sitemap.xml                # Site map index
+└── sitemap-0.xml              # Generated sitemap
 
-## Deploy on Vercel
+.gitignore                     # Git ignore file
+package.json                   # NPM package definition
+package-lock.json              # NPM package lock
+next.config.js                 # Next.js configuration
+tailwind.config.js             # Tailwind CSS configuration
+postcss.config.js              # PostCSS configuration
+jsconfig.json                  # JavaScript configuration
+.eslintrc.json                 # ESLint configuration
+next-sitemap.config.js         # Sitemap generation config
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript compiler
+
+## Deployment
+
+The site can be easily deployed to platforms like Vercel, Netlify, or any static hosting service.
+
+## Contact
+
+For questions about this project or our construction services, feel free to reach out through the contact page on the website.
+
+---
+
+Built with ❤️ by [Your Names]
