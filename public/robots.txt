@@ -1,0 +1,26 @@
+# robots.txt for Construction Business Website
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow crawling of Next.js internal directories
+Disallow: /_next/
+Disallow: /api/
+
+# Disallow crawling of common admin and system files
+Disallow: /admin/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Allow crawling of images for better SEO
+Allow: /images/
+Allow: /photos/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay (optional - be respectful to search engines)
+Crawl-delay: 1

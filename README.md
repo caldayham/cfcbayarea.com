@@ -2,6 +2,14 @@
 
 A modern, responsive website for our construction and design business built with TypeScript, React, and Tailwind CSS.
 
+Quality design and construction for those small to medium sized outdoor projects you've always wanted to check off your todo list. Clear and honest communication, non-corprateized prices, and a demonstrated commitment to client satisfaction. 
+
+If there's a project you haven't gotten around to yet feel free to leave your number and we'll give you a quick call, even if we aren't a great fit we are happy to point you in the right direction!
+
+Cal is a graduate from the University of Minnesota with a degree in cell biology, and Fynn is a current undergraduate at Foothills college with a focus in engineering. Cal and Fynn grew up and their fathers workshop and have an intuitive understanding of the design / build process of physical structures.
+
+
+
 ## About
 
 This website showcases our construction and design services, featuring our portfolio of completed projects and providing an easy way for potential clients to get in touch with us.
@@ -12,7 +20,6 @@ This website showcases our construction and design services, featuring our portf
 - **Process** - Overview of how we work with clients
 - **Portfolio** - Showcase of our completed projects
 - **Contact** - Easy ways for clients to reach out
-
 ## Tech Stack
 
 - **TypeScript** - Type-safe JavaScript development
