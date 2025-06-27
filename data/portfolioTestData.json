@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "title": "Custom Cedar Privacy Fence",
+    "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    "location": "Palo Alto, CA",
+    "completionDate": "2024-11-15",
+    "projectType": "Fence",
+    "description": "Beautiful 6-foot cedar privacy fence with custom gate design. Features horizontal slat styling and integrated lighting."
+  },
+  {
+    "id": "2", 
+    "title": "Modern Chicken Coop & Run",
+    "thumbnail": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&h=600&fit=crop",
+    "location": "Menlo Park, CA",
+    "completionDate": "2024-10-22",
+    "projectType": "Chicken Coop",
+    "description": "Custom-built chicken coop with automated door, integrated nesting boxes, and spacious outdoor run area."
+  },
+  {
+    "id": "3",
+    "title": "Redwood Garden Gate",
+    "thumbnail": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=600&fit=crop",
+    "location": "Mountain View, CA", 
+    "completionDate": "2024-09-30",
+    "projectType": "Gate",
+    "description": "Handcrafted redwood garden gate with decorative ironwork and self-closing hinges. Matches existing fence design."
+  },
+  {
+    "id": "4",
+    "title": "Backyard Storage Shed",
+    "thumbnail": "https://images.unsplash.com/photo-1504890001746-a9a68eda46e2?w=800&h=600&fit=crop",
+    "location": "Los Altos, CA",
+    "completionDate": "2024-08-18",
+    "projectType": "Shed",
+    "description": "Compact cedar storage shed with double doors, windows, and integrated shelving system for garden tools."
+  },
+  {
+    "id": "5",
+    "title": "Raised Garden Bed System",
+    "thumbnail": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop", 
+    "location": "Palo Alto, CA",
+    "completionDate": "2024-07-25",
+    "projectType": "Garden Structure",
+    "description": "Multi-level raised garden beds with built-in irrigation system and deer-resistant mesh covers."
+  },
+  {
+    "id": "6",
+    "title": "Picket Fence Restoration",
+    "thumbnail": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=800&h=600&fit=crop",
+    "location": "Stanford, CA",
+    "completionDate": "2024-06-12",
+    "projectType": "Fence",
+    "description": "Complete restoration of historic white picket fence including foundation repair and period-accurate details."
+  },
+  {
+    "id": "7",
+    "title": "Custom Pergola & Trellis",
+    "thumbnail": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+    "location": "Atherton, CA",
+    "completionDate": "2024-05-20",
+    "projectType": "Pergola",
+    "description": "Cedar pergola with integrated grape vine trellis and outdoor lighting for entertaining space."
+  },
+  {
+    "id": "8",
+    "title": "Security Gate & Fence",
+    "thumbnail": "https://images.unsplash.com/photo-1605908502724-9093a7936d45?w=800&h=600&fit=crop",
+    "location": "East Palo Alto, CA",
+    "completionDate": "2024-04-08", 
+    "projectType": "Security",
+    "description": "Heavy-duty security fence with automated gate, keypad entry, and reinforced posts for commercial property."
+  }
+]
