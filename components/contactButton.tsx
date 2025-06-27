@@ -1,9 +1,9 @@
 import React from 'react'
 
-const contactButton = () => {
+const ContactButton = () => {
   return (
-    <div>contactButton</div>
+    <div>ContactButton</div>
   )
 }
 
-export default contactButton
+export default ContactButton
