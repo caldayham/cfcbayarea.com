@@ -1,41 +1,33 @@
-import mongoose from 'mongoose';
+import mongoose, { ConnectOptions } from 'mongoose';
 
-// Track connection status
 let isConnected = false;
 
-/**
- * Connect to MongoDB using Mongoose
- * Handles connection caching and error handling
- */
 export const connectDB = async () => {
-  // If already connected, return early
   if (isConnected) {
     console.log('MongoDB is already connected');
     return;
   }
 
-  // If no connection string, throw error
-  if (!process.env.MONGODB_URI) {
-    throw new Error('Please add your MongoDB URI to .env.local');
-  }
+  const uri = process.env.MONGODB_URI;
+  if (!uri) throw new Error('Please add your MongoDB URI to .env.local');
 
   try {
-    // Connect to MongoDB
-    const db = await mongoose.connect(process.env.MONGODB_URI, {
-      // Modern connection options
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    // Pass only modern options you actually need (everything below is optional)
+    const opts: ConnectOptions = {
+      // example: dbName: process.env.DB_NAME,
+      // example: authSource: 'admin',
+    };
 
+    const db = await mongoose.connect(uri, opts);
     isConnected = db.connections[0].readyState === 1;
     console.log('MongoDB connected successfully');
-    
     return db;
-  } catch (error) {
-    console.error('MongoDB connection error:', error);
-    throw error;
+  } catch (err) {
+    console.error('MongoDB connection error:', err);
+    throw err;
   }
 };
+
 
 /**
  * Disconnect from MongoDB

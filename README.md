@@ -16,10 +16,9 @@ This website showcases our construction and design services, featuring our portf
 
 ## Features
 
-- **Homepage** - Introduction to our business and what we offer
-- **Process** - Overview of how we work with clients
-- **Portfolio** - Showcase of our completed projects
-- **Contact** - Easy ways for clients to reach out
+- **Homepage** - Who we are, what we do, how we do it - if they like this they choose us.
+- **Portfolio** - Showcase of our completed projects - proof of what we say we are.
+
 ## Tech Stack
 
 - **TypeScript** - Type-safe JavaScript development
@@ -64,7 +63,7 @@ yarn dev
 app/
 ├── layout.js                    # Main layout component
 ├── page.js                      # Home page
-├── dashboard/                   # Dashboard pages
+├── portfolio/                   # Dashboard pages
 │   ├── layout.js               # Dashboard layout
 │   └── page.js                 # Dashboard main page
 ├── api/                        # API routes
