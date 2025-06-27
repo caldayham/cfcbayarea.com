@@ -16,7 +16,7 @@ export default function Home() {
           {/* Subheading - highlights local service and specialization */}
           <p className="text-xl md:text-2xl mb-8 text-slate-200">
             Local Palo Alto builders specializing in fences, gates, chicken coops, 
-            and custom projects that big companies won't touch.
+            and custom projects that big companies won&apos;t touch.
           </p>
           
           {/* Call to action button - drives to portfolio */}
@@ -38,14 +38,14 @@ export default function Home() {
           {/* Story about the brothers and their background */}
           <div className="prose prose-lg mx-auto text-center">
             <p className="text-slate-700 leading-relaxed mb-6">
-              We're Cal and Fynn, brothers who've been building things since we could walk. 
-              Growing up in our father's workshop here in Palo Alto, we developed an intuitive 
+              We&apos;re Cal and Fynn, brothers who&apos;ve been building things since we could walk. 
+              Growing up in our father&apos;s workshop here in Palo Alto, we developed an intuitive 
               understanding of how things come together.
             </p>
             
             <p className="text-slate-700 leading-relaxed">
               Cal brings landscape design expertise, while Fynn contributes his engineering background. 
-              Together, we focus on quality craftsmanship over maximum profit – because we'd rather 
+              Together, we focus on quality craftsmanship over maximum profit – because we&apos;d rather 
               build something right than build it fast.
             </p>
           </div>

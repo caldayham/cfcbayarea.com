@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React from 'react';
 import PortfolioPreviewCard from '@/components/PortfolioPreviewCard';
@@ -63,7 +63,7 @@ export default function Portfolio() {
             Ready to Start Your Project?
           </h2>
           <p className="text-slate-600 mb-6">
-            Let's discuss your custom construction needs.
+            Let&apos;s discuss your custom construction needs.
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg transition-colors">
             Contact Us Today

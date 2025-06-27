@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Calendar, MapPin, Tag } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 
 // Interface for the portfolio item data structure
 interface PortfolioItem {
