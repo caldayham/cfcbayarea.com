@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function TermsOfService() {
   return (
@@ -152,12 +153,12 @@ export default function TermsOfService() {
           <p className="text-slate-600 mb-4">
             These terms are effective as of January 2025 and may be updated as needed.
           </p>
-          <a 
+          <Link 
             href="/" 
             className="text-blue-600 hover:text-blue-700 font-medium"
           >
             ← Back to Home
-          </a>
+          </Link>
         </div>
 
       </div>
