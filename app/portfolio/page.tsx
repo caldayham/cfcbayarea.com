@@ -3,7 +3,6 @@
 import React from 'react';
 import PortfolioPreviewCard from '@/components/PortfolioPreviewCard';
 import portfolioData from '@/data/portfolioTestData.json';
-import ScrollManager from '@/components/ScrollManager';
 
 // Define the portfolio item interface (same as in component)
 interface PortfolioItem {
@@ -25,7 +24,6 @@ export default function Portfolio() {
 
   return (
     <>
-      <ScrollManager />
       <div className="min-h-screen py-12 px-4">
         <div className="max-w-6xl mx-auto">
 

@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import ScrollManager from '@/components/ScrollManager';
 
 export default function Home() {
   return (
     <>
-      <ScrollManager />
       <div className="min-h-screen">
         {/* Hero Section */}
         <section className="bg-gradient-hero text-white py-20 px-4">
