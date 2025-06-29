@@ -9,13 +9,13 @@ export default function Home() {
         <section className="bg-gradient-hero text-white py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
             {/* Main headline - emphasizes custom quality work */}
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-6xl font-bold mb-6">
               Personal design.<br />
               Quality construction.<br />
             </h1>
 
             {/* Subheading - highlights local service and specialization */}
-            <p className="text-xl md:text-2xl mb-8 text-light">
+            <p className="text-lg md:text-2xl mb-8 text-light">
               Local Palo Alto brothers specializing in garden boxes, outdoor storage,
               and other custom projects the big companies won't touch.
             </p>

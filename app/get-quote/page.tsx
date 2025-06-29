@@ -29,7 +29,7 @@ export default function GetQuotePage() {
     <div className="min-h-screen flex flex-col">
       <header className="bg-gradient-hero text-white py-14 px-4">
         <div className="max-w-xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
             Ready to shorten your outdoor to-do list?
           </h1>
         </div>
