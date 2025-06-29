@@ -12,6 +12,7 @@
 :root {
   /* Core Colors - Based on your home page design */
   --color-background: #ffffff;          /* Pure white background */
+  --color-background-light-accent: #dddddd;
   --color-surface: #f8fafc;            /* Light slate for sections (slate-50) */
   --color-surface-hover: #f1f5f9;      /* Slightly darker for hover states */
   

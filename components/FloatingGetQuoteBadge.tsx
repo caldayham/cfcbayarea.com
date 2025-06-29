@@ -9,10 +9,10 @@ const FloatingGetQuoteBadge = () => {
   };
 
   return (
-    <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+    <div className="fixed top-2 left-1/2 -translate-x-1/2 z-50">
       <button
         onClick={handleContactClick}
-        className="px-6 py-3 font-medium text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+        className="px-6 py-2 font-medium text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
         style={{
           backgroundColor: 'var(--color-accent)',
           borderRadius: 'var(--radius)',

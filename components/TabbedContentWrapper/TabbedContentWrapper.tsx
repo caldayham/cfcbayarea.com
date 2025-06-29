@@ -4,7 +4,7 @@
 import React from 'react';
 import Frame         from './Frame';
 import FloatingTabs  from './FloatingTabs';
-import TopSpacer     from './TopSpacer';       // adjust relative path if needed
+import Spacer     from './Spacer';       // adjust relative path if needed
 
 export default function TabbedContentWrapper({
   children,
@@ -19,8 +19,8 @@ export default function TabbedContentWrapper({
         data-scroll-restoration-id="main-content"
         style={{ borderRadius: 'calc(var(--radius) - 4px)' }}
       >
-        <TopSpacer height={72} />
         {children}
+        <Spacer height={60}/>
       </main>
 
       {/* floating centred tabs */}
