@@ -1,8 +1,9 @@
+import HoveringProgressBar from '@/components/HoveringProgressBar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Backyard construction!',
-  description: 'View our custom construction projects in the Palo Alto Bay Area. Fences, gates, chicken coops, and custom builds.',
+  title: 'Get a quote!',
+  description: 'Contact us to schedule a free design consultation today!',
 };
 
 export default function PortfolioLayout({
@@ -12,6 +13,7 @@ export default function PortfolioLayout({
 }) {
   return (
     <>
+      <HoveringProgressBar />
       {children}
     </>
   );

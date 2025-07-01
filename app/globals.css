@@ -1,91 +1,75 @@
 @import "tailwindcss";
 
-.hide-scrollbar {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
+/* ---------- SCROLL-BAR HIDER (unchanged) ---------- */
+.hide-scrollbar { scrollbar-width:none; -ms-overflow-style:none; }
+.hide-scrollbar::-webkit-scrollbar { display:none; }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-
+/* ---------- DESIGN TOKENS ---------- */
 :root {
-  /* Core Colors - Based on your home page design */
-  --color-background: #ffffff;          /* Pure white background */
-  --color-background-light-accent: #dddddd;
-  --color-surface: #f8fafc;            /* Light slate for sections (slate-50) */
-  --color-surface-hover: #f1f5f9;      /* Slightly darker for hover states */
-  
-  /* Text Colors */
-  --color-text-primary: #0f172a;       /* Dark slate for headings (slate-900) */
-  --color-text-secondary: #334155;     /* Medium slate for body text (slate-700) */
-  --color-text-muted: #64748b;         /* Light slate for muted text (slate-600) */
-  --color-text-light: #cbd5e1;         /* Light text on dark backgrounds (slate-200) */
-  
-  /* Accent Color - Blue from your buttons */
-  --color-accent: #2563eb;             /* Blue-600 from your buttons */
-  --color-accent-hover: #1d4ed8;       /* Blue-700 for hover states */
-  --color-accent-light: #dbeafe;       /* Light blue for backgrounds (blue-100) */
-  
-  /* Gradient Colors - From your hero section */
-  --color-gradient-start: #0f172a;     /* slate-900 */
-  --color-gradient-end: #334155;       /* slate-700 */
-  
-  /* Stone/Slate Theme Colors */
-  --color-slate-50: #f8fafc;
-  --color-slate-200: #e2e8f0;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-900: #0f172a;
-  
-  /* Blue Theme Colors */
-  --color-blue-100: #dbeafe;
-  --color-blue-600: #2563eb;
-  --color-blue-700: #1d4ed8;
-  
-  /* Functional Colors */
-  --color-border: #e2e8f0;             /* Light border (slate-200) */
-  --color-input: #f1f5f9;              /* Input background */
-  --color-shadow: rgba(15, 23, 42, 0.1); /* Subtle shadows */
-  
-  /* Radius */
-  --radius: 0.5rem;                     /* 8px - clean and modern */
-  --radius-lg: 0.75rem;                /* 12px for larger elements */
+  /* Neutral palette */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50:  #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-500: #6b7280;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+
+  /* Crimson accent (3-tone) */
+  --color-accent-light: #ffe9ee;   /* very-light crimson tint */
+  --color-accent:       #dc143c;   /* CSS "crimson" */
+  --color-accent-dark:  #a10d28;   /* deeper crimson */
+
+  /* Misc */
+  --color-border: var(--color-gray-200);
+  --color-input:  var(--color-gray-100);
+  --color-shadow: rgba(0,0,0,.05);
+
+  /* Radii */
+  --radius-sm: .375rem;
+  --radius:    .5rem;
+  --radius-lg: .75rem;
 }
 
-/* Base Styles */
-* {
-  box-sizing: border-box;
-}
+/* ---------- UTILITIES ---------- */
+.bg-white      { background: var(--color-white); }
+.bg-gray       { background: var(--color-gray-50); }
+.bg-accent     { background: var(--color-accent); }
+.bg-accent-light { background: var(--color-accent-light); }
+.bg-accent-dark  { background: var(--color-accent-dark); }
 
-body {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-/* Utility Classes for Your Color Scheme */
-.bg-primary { background-color: var(--color-background); }
-.bg-surface { background-color: var(--color-surface); }
-.bg-gradient-hero { 
-  background: linear-gradient(to bottom right, var(--color-gradient-start), var(--color-gradient-end));
-}
-.bg-accent { background-color: var(--color-accent); }
-.bg-accent-light { background-color: var(--color-accent-light); }
-
-.text-primary { color: var(--color-text-primary); }
-.text-secondary { color: var(--color-text-secondary); }
-.text-muted { color: var(--color-text-muted); }
-.text-light { color: var(--color-text-light); }
-.text-accent { color: var(--color-accent); }
+.text-primary   { color: var(--color-gray-900); }
+.text-secondary { color: var(--color-gray-700); }
+.text-muted     { color: var(--color-gray-500); }
+.text-accent    { color: var(--color-accent); }
 
 .border-default { border-color: var(--color-border); }
 
-.rounded-default { border-radius: var(--radius); }
-.rounded-lg-default { border-radius: var(--radius-lg); }
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded    { border-radius: var(--radius); }
+.rounded-lg { border-radius: var(--radius-lg); }
 
-/* Hover States */
-.hover\:bg-accent-hover:hover { background-color: var(--color-accent-hover); }
+.hover\:bg-accent-dark:hover { background: var(--color-accent-dark); }
+
+/* ---------- LIGHT GRID BACKDROP ---------- */
+/* Add class “bg-grid” to any section (or the <body>) */
+.bg-grid {
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(0,0,0,.04) 0,
+      rgba(0,0,0,.04) 1px,
+      transparent      1px,
+      transparent    25%
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0,0,0,.04) 0,
+      rgba(0,0,0,.04) 1px,
+      transparent      1px,
+      transparent    25%
+    );
+  background-size: 200px 200px;   /* adjust density */
+}

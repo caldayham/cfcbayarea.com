@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-//import FloatingGetQuoteBadge from "@/components/FloatingGetQuoteBadge";
-import TabbedContentWrapper from "@/components/TabbedContentWrapper/TabbedContentWrapper";
+import TabbedContentWrapper from "@/components/TabbedContentWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quality design build.",
+  title: "Quality design & build",
   description: "Personal design, honest communication, and quality construction.",
 };
 
@@ -29,7 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
-        {/*<FloatingGetQuoteBadge />*/}
         <TabbedContentWrapper>
 
           {children}

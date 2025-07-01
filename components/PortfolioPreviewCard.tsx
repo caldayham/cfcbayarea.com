@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import { Calendar, MapPin } from 'lucide-react';
 
-// Interface for the portfolio item data structure
-interface PortfolioItem {
+/* ---------- Types ---------- */
+export interface PortfolioItem {
   id: string;
   title: string;
   thumbnail: string;
@@ -13,80 +13,64 @@ interface PortfolioItem {
   description: string;
 }
 
-// Props interface for the component
-interface PortfolioPreviewCardProps {
+interface Props {
   item: PortfolioItem;
-  onClick: (item: PortfolioItem) => void;
+  onClick: (i: PortfolioItem) => void;
 }
 
-const PortfolioPreviewCard: React.FC<PortfolioPreviewCardProps> = ({ item, onClick }) => {
-  // Format the completion date for display
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      month: 'short', 
-      year: 'numeric' 
-    });
-  };
+/* ---------- Component ---------- */
+const PortfolioPreviewCard: React.FC<Props> = ({ item, onClick }) => {
+  const formatDate = (ts: string) =>
+    new Date(ts).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 
   return (
-    <div 
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer group"
+    <article
+      className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer group border border-default"
       onClick={() => onClick(item)}
     >
-      {/* Thumbnail Image */}
-      <div className="relative h-48 w-full overflow-hidden">
+      {/* --- Thumbnail --- */}
+      <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
         <Image
           src={item.thumbnail}
           alt={item.title}
           fill
+          priority
           className="object-cover group-hover:scale-105 transition-transform duration-300"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
         />
-        
-        {/* Project Type Badge */}
-        <div className="absolute top-3 right-3">
-          <span className="bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded-full">
-            {item.projectType}
-          </span>
-        </div>
+
+        {/* --- Badge --- */}
+        <span className="absolute top-3 right-3 bg-accent text-white text-[10px] font-semibold leading-none px-2 py-[3px] rounded-sm shadow-sm">
+          {item.projectType}
+        </span>
       </div>
 
-      {/* Card Content */}
+      {/* --- Body --- */}
       <div className="p-4">
-        {/* Project Title */}
-        <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+        <h3 className="text-lg font-semibold mb-1 group-hover:text-accent transition-colors">
           {item.title}
         </h3>
 
-        {/* Short Description */}
-        <p className="text-slate-600 text-sm mb-3 line-clamp-2">
-          {item.description}
-        </p>
+        <p className="text-secondary text-sm mb-3 line-clamp-2">{item.description}</p>
 
-        {/* Project Details */}
-        <div className="space-y-2">
-          {/* Location */}
-          <div className="flex items-center text-slate-500 text-sm">
-            <MapPin className="h-4 w-4 mr-2 flex-shrink-0" />
-            <span>{item.location}</span>
+        <div className="space-y-1 text-muted text-sm">
+          <div className="flex items-center">
+            <MapPin className="w-4 h-4 mr-2 shrink-0" />
+            {item.location}
           </div>
-
-          {/* Completion Date */}
-          <div className="flex items-center text-slate-500 text-sm">
-            <Calendar className="h-4 w-4 mr-2 flex-shrink-0" />
-            <span>Completed {formatDate(item.completionDate)}</span>
+          <div className="flex items-center">
+            <Calendar className="w-4 h-4 mr-2 shrink-0" />
+            Completed {formatDate(item.completionDate)}
           </div>
         </div>
 
-        {/* Click Indicator */}
-        <div className="mt-3 pt-3 border-t border-slate-100">
-          <span className="text-blue-600 text-sm font-medium group-hover:text-blue-700">
+        <div className="pt-3 mt-4 border-t border-default">
+          <span className="text-accent text-sm font-medium group-hover:opacity-80">
             View Details →
           </span>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

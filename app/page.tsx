@@ -1,176 +1,101 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import HookBanner from '@/components/HookBanner';
 
-export default function Home() {
+export default function About() {
   return (
-    <>
-      <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="bg-gradient-hero text-white py-20 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Main headline - emphasizes custom quality work */}
-            <h1 className="text-3xl md:text-6xl font-bold mb-6">
-              Personal design.<br />
-              Quality construction.<br />
-            </h1>
+    <div className="min-h-screen bg-white text-primary">
 
-            {/* Subheading - highlights local service and specialization */}
-            <p className="text-lg md:text-2xl mb-8 text-light">
-              Local Palo Alto brothers specializing in garden boxes, outdoor storage,
-              and other custom projects the big companies won't touch.
+      <HookBanner />
+
+      {/* Who We Are */}
+      <section className="py-16 px-4 md:px-8 bg-white border-t border-default">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
+            Who We Are
+          </h2>
+          <div className="bg-gray p-6 sm:p-8 rounded-lg shadow-sm">
+            <p className="text-secondary leading-relaxed mb-6">
+              We're Cal and Fynn, two brothers who love design and construction and decided to turn it into a part-time summer job! Personal design, quality construction. 
             </p>
-
-            {/* Call to action button - drives to portfolio */}
-            <Button asChild size="lg" className="bg-accent hover:bg-accent-hover text-lg px-8 py-3">
-              <Link href="/portfolio">
-                See Our Work
-              </Link>
-            </Button>
-          </div>
-        </section>
-
-        {/* Who We Are Section */}
-        <section className="py-16 px-4 bg-primary">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-primary">
-              Who We Are
-            </h2>
-
-            {/* Story about the brothers and their background */}
-            <div className="prose prose-lg mx-auto text-center">
-              <p className="text-secondary leading-relaxed mb-6">
-                We're Cal and Fynn, brothers who've been building things since we could walk.
-                Growing up in our father's workshop here in Palo Alto, we developed an intuitive
-                understanding of how things come together.
-              </p>
-
-              <p className="text-secondary leading-relaxed">
-                Cal brings landscape design expertise, while Fynn contributes his engineering background.
-                Together, we focus on quality craftsmanship over maximum profit – because we'd rather
-                build something right than build it fast.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* What We Do Section */}
-        <section className="py-16 px-4 bg-surface">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-primary">
-              What We Do
-            </h2>
-
-            {/* Grid of specializations */}
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏗️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Custom Fences & Gates</h3>
-                <p className="text-muted">
-                  Unique designs tailored to your property and style preferences.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐔</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Chicken Coops</h3>
-                <p className="text-muted">
-                  Functional and beautiful homes for your backyard flock.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🔨</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Custom Projects</h3>
-                <p className="text-muted">
-                  Small to medium builds that require a personal touch.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* How We Do It Section */}
-        <section className="py-16 px-4 bg-primary">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-primary">
-              How We Work
-            </h2>
-
-            {/* Process steps */}
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                  1
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Free Consultation</h3>
-                  <p className="text-secondary">
-                    We visit your site to understand your vision and assess the project scope.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Detailed Planning</h3>
-                  <p className="text-secondary">
-                    We create comprehensive construction plans and provide transparent pricing.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Quality Construction</h3>
-                  <p className="text-secondary">
-                    We source materials and build your project with attention to every detail.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Payment structure note */}
-            <div className="mt-8 p-6 bg-surface rounded-lg-default">
-              <p className="text-sm text-muted text-center">
-                <strong>Simple Payment:</strong> 50% to start, 50% at completion. No hidden fees.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action Section */}
-        <section className="py-16 px-4 bg-gradient-hero text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Ready to Build Something Amazing?
-            </h2>
-
-            <p className="text-xl mb-8 text-light">
-              See our previous work and get inspired for your next project.
+            <p className="text-secondary leading-relaxed">
+              Cal brings landscape design expertise, while Fynn contributes his engineering background…
             </p>
-
-            {/* Portfolio CTA button */}
-            <Button asChild size="lg" className="bg-accent hover:bg-accent-hover text-lg px-8 py-3">
-              <Link href="/portfolio">
-                View Our Portfolio
-              </Link>
-            </Button>
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
 
+      {/* What We Do */}
+      <section className="py-16 px-4 md:px-8 bg-gray border-t border-default">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
+            What We Do
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: '🏗️', title: 'Custom Fences & Gates', desc: 'Unique designs tailored to your property and style preferences.' },
+              { icon: '🐔', title: 'Chicken Coops', desc: 'Functional and beautiful homes for your backyard flock.' },
+              { icon: '🔨', title: 'Custom Projects', desc: 'Small to medium builds that require a personal touch.' }
+            ].map((item) => (
+              <div key={item.title} className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 bg-accent-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                  <span className="text-2xl">{item.icon}</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-muted text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How We Work */}
+      <section className="py-16 px-4 md:px-8 bg-white border-t border-default">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
+            How We Work
+          </h2>
+          <div className="space-y-10">
+            {[
+              ['Free Consultation', 'We visit your site to understand your vision and assess the project scope.'],
+              ['Detailed Planning', 'We create comprehensive construction plans and provide transparent pricing.'],
+              ['Quality Construction', 'We source materials and build your project with attention to every detail.']
+            ].map(([title, desc], idx) => (
+              <div key={idx} className="flex items-start space-x-4">
+                <div className="w-9 h-9 bg-accent text-white rounded-full flex items-center justify-center font-bold shadow-sm">
+                  {idx + 1}
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-1">{title}</h3>
+                  <p className="text-secondary text-sm">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 p-6 bg-gray rounded-lg shadow-sm border border-default text-center">
+            <p className="text-sm text-muted">
+              <strong>Simple Payment:</strong> 50 % to start, 50 % at completion. No hidden fees.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA – still white, relies on imagery for pop */}
+      <section className="py-20 px-4 md:px-8 bg-white border-t border-default">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+            Ready to Build Something Amazing?
+          </h2>
+          <p className="text-lg sm:text-xl mb-8 text-secondary">
+            See our previous work and get inspired for your next project.
+          </p>
+          <Button asChild size="lg" className="text-white bg-accent hover:bg-accent-dark text-lg px-8 py-3 shadow-lg rounded">
+            <Link href="/portfolio">View Our Portfolio</Link>
+          </Button>
+        </div>
+      </section>
+    </div>
   );
 }
