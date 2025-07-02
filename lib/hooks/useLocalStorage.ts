@@ -1,6 +1,6 @@
 import { useState, Dispatch, SetStateAction } from 'react';
 
-function useLocalStorage<T>(
+/* function useLocalStorage<T>(
   key: string, 
   initialValue: T
 ): [T, Dispatch<SetStateAction<T>>] {
@@ -28,3 +28,5 @@ function useLocalStorage<T>(
 
   return [storedValue, setValue];
 }
+
+*/

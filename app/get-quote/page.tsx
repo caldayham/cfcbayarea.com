@@ -1,10 +1,10 @@
 import React from 'react'
-import PageV1 from './PageV1'
+import PageV2 from './PageV2'
 
 const page = () => {
   return (
     <div>
-      <PageV1 />
+      <PageV2 />
     </div>
   )
 }
