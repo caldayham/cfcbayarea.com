@@ -233,10 +233,7 @@ const GetQuotePage = () => {
                   What is your name and phone number?
                 </h1>
                 <p className="text-gray-600 italic mb-6 text-center">
-                  We only use your information to contact you directly. 
-                  <br/>
-                  We never share or sell your information.
-                  <br/> We are not data brokers, we are brothers who like to build stuff.
+                  We only use your information to contact you directly. We never share or sell your information.
                 </p>
                 
                 <div className="space-y-3">
