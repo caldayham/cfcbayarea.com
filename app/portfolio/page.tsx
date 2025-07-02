@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <main className="min-h-screen bg-white text-primary">
       {/* --- Page Hero (optional) --- */}
-      <section className="py-20 px-4 md:px-8 bg-gray border-b border-default text-center">
+      <section className="py-10 px-4 md:px-8 bg-gray border-b border-default text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Our Portfolio</h1>
         <p className="text-secondary max-w-2xl mx-auto">
           Click on a pin to read more about the project or scroll down to our gallery!
