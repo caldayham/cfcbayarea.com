@@ -1,13 +1,14 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
+import type * as L from 'leaflet';
 
 const JobMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstanceRef = useRef<any>(null);
+  const mapInstanceRef = useRef<L.Map | null>(null);
 
-  // Sample job locations around Palo Alto Bay Area
-  const jobLocations = [
+  // Sample job locations around Palo Alto Bay Area - memoized to prevent re-renders
+  const jobLocations = useMemo(() => [
     { id: 1, lat: 37.4419, lng: -122.1430, title: "Palo Alto Deck Project" },
     { id: 2, lat: 37.4636, lng: -122.1219, title: "Menlo Park Fence Installation" },
     { id: 3, lat: 37.4088, lng: -122.1078, title: "Mountain View Pergola" },
@@ -16,15 +17,37 @@ const JobMap = () => {
     { id: 6, lat: 37.4529, lng: -122.1817, title: "Atherton Custom Structure" },
     { id: 7, lat: 37.3688, lng: -122.0363, title: "Santa Clara Patio" },
     { id: 8, lat: 37.4852, lng: -122.2364, title: "San Carlos Retaining Wall" }
-  ];
+  ], []);
 
+  useEffect(() => {
+    // Dynamically load Leaflet CSS
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+    link.crossOrigin = '';
+    document.head.appendChild(link);
+
+    return () => {
+      // Cleanup: remove the link when component unmounts
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
+    };
+  }, []);
   useEffect(() => {
     // Only initialize if we haven't already and the ref exists
     if (!mapInstanceRef.current && mapRef.current) {
       // Dynamically import Leaflet to avoid SSR issues
       import('leaflet').then((L) => {
-        // Initialize map centered on Palo Alto
-        const map = L.map(mapRef.current!).setView([37.4419, -122.1430], 11);
+        // Initialize map centered on Palo Alto with scroll zoom disabled
+        const map = L.map(mapRef.current!, {
+          scrollWheelZoom: false,
+          doubleClickZoom: true,
+          touchZoom: true,
+          boxZoom: true,
+          keyboard: true
+        }).setView([37.4419, -122.1430], 11);
 
         // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -64,7 +87,7 @@ const JobMap = () => {
         mapInstanceRef.current = null;
       }
     };
-  }, []);
+  }, [jobLocations]);
 
   return (
     <div className="w-full max-w-4xl mx-auto pt-10">
@@ -100,19 +123,6 @@ const JobMap = () => {
           </div>
         </div>
       </div>
-
-      {/* Leaflet CSS - Load dynamically */}
-      <link 
-        rel="stylesheet" 
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossOrigin=""
-      />
-      <script 
-        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossOrigin=""
-      />
     </div>
   );
 };
