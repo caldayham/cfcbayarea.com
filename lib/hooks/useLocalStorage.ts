@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 /**
  * Custom hook for managing state with localStorage persistence
@@ -16,10 +16,10 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
       if (typeof window === 'undefined') {
         return initialValue;
       }
-      
+
       // Get from local storage by key
       const item = window.localStorage.getItem(key);
-      
+
       // Parse stored json or return initialValue if none exists
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
@@ -37,10 +37,10 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     try {
       // Allow value to be a function so we have the same API as useState
       const valueToStore = value instanceof Function ? value(storedValue) : value;
-      
+
       // Save state
       setStoredValue(valueToStore);
-      
+
       // Save to local storage
       if (typeof window !== 'undefined') {
         window.localStorage.setItem(key, JSON.stringify(valueToStore));
@@ -58,7 +58,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     try {
       // Reset to initial value
       setStoredValue(initialValue);
-      
+
       // Remove from localStorage
       if (typeof window !== 'undefined') {
         window.localStorage.removeItem(key);

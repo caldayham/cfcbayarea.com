@@ -4,7 +4,6 @@
 import React from 'react';
 import Frame         from './Frame';
 import FloatingTabs  from './FloatingTabs';
-import Spacer     from './Spacer';       // adjust relative path if needed
 
 export default function TabbedContentWrapper({
   children,

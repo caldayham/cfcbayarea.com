@@ -4,7 +4,7 @@ import HookBanner from '@/components/About_Components/HookBanner';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white text-primary">
+    <div className="min-h-screen bg-white text-primary mb-10">
 
       <HookBanner />
 

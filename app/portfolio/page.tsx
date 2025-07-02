@@ -8,7 +8,7 @@ export default function Portfolio() {
   const handleClick = (item: PortfolioItem) => console.log('clicked', item);
 
   return (
-    <main className="min-h-screen bg-white text-primary">
+    <main className="min-h-screen bg-white text-primary mb-10">
       {/* --- Page Hero (optional) --- */}
       <section className="py-10 px-4 md:px-8 bg-gray border-b border-default text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Our Portfolio</h1>
