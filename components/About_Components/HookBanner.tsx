@@ -7,7 +7,7 @@ import CTAButton from '../CTAButton';
 const HookBanner = () => {
   return (
     <div className="min-h-screen px-4 md:px-12 bg-white bg-grid flex items-center">
-      <div className="max-w-6xl mx-auto pb-20 flex flex-col md:flex-row items-center gap-5 pt-8 md:pt-0">
+      <div className="max-w-6xl mx-auto pb-20 flex flex-col md:flex-row items-center gap-5 pt-0 md:pt-0">
 
         {/* Left: Text */}
         <div className="w-full md:basis-1/2 lg:basis-[60%] text-center md:text-left">
@@ -15,7 +15,7 @@ const HookBanner = () => {
             Get it done right.
           </h1>
           <p className="text-md md:text-2xl mb-8 text-secondary max-w-xl md:max-w-none mx-auto md:mx-0">
-            Palo Alto brothers building the custom outdoor projects other companies won't touch!
+            Two Palo Alto brothers building the custom outdoor projects other companies won't touch!
           </p>
           <CTAButton href='/portfolio'>See Our Work</CTAButton>
         </div>
