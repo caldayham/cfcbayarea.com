@@ -2,6 +2,7 @@
 
 import portfolioData from '@/data/portfolioTestData.json';
 import PortfolioPreviewCard, { PortfolioItem } from '@/components/Portfolio_Components/PortfolioPreviewCard';
+import JobMap from '@/components/Portfolio_Components/JobMap';
 
 export default function Portfolio() {
   const handleClick = (item: PortfolioItem) => console.log('clicked', item);
@@ -12,9 +13,11 @@ export default function Portfolio() {
       <section className="py-20 px-4 md:px-8 bg-gray border-b border-default text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Our Portfolio</h1>
         <p className="text-secondary max-w-2xl mx-auto">
-          Here are some of our recent custom construction projects throughout the Palo Alto Bay Area! 
+          Click on a pin to read more about the project or scroll down to our gallery!
         </p>
       </section>
+      
+      <JobMap />
 
       {/* --- Portfolio Grid --- */}
       <section className="py-16 px-4 md:px-8">
