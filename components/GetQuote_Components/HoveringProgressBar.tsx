@@ -4,25 +4,20 @@ import React, { useState, useEffect } from 'react';
 
 const HoveringProgressBar = () => {
   const [progress, setProgress] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleProgressUpdate = (event: CustomEvent) => {
-      const newProgress = event.detail.progress;
-      // Show first step as complete when on first question (currentStep 0)
-      // This makes it clear it's a progress bar from the start
-      const adjustedProgress = Math.max(newProgress, 1 / event.detail.totalSlides * 100);
-      setProgress(adjustedProgress);
+      const { currentStep, totalSlides } = event.detail;
       
-      // Always show progress bar on this page
-      setIsVisible(true);
+      // Frame-shift the progress so:
+      // - Step 0 (first question) shows some progress (1 step complete)
+      // - Final step shows 100% complete
+      const adjustedProgress = ((currentStep + 1) / totalSlides) * 100;
+      setProgress(adjustedProgress);
     };
 
     // Listen for the progress updates from your form
     window.addEventListener('progressUpdate', handleProgressUpdate as EventListener);
-
-    // Show progress bar immediately when component mounts
-    setIsVisible(true);
 
     return () => {
       window.removeEventListener('progressUpdate', handleProgressUpdate as EventListener);

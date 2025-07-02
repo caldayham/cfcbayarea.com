@@ -3,8 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import CTAButton from './CTAButton';
+import CTAButton from '../CTAButton';
 
 const HookBanner = () => {
   return (

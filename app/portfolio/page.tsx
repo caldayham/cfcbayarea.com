@@ -1,7 +1,7 @@
 'use client';
 
 import portfolioData from '@/data/portfolioTestData.json';
-import PortfolioPreviewCard, { PortfolioItem } from '@/components/PortfolioPreviewCard';
+import PortfolioPreviewCard, { PortfolioItem } from '@/components/Portfolio_Components/PortfolioPreviewCard';
 
 export default function Portfolio() {
   const handleClick = (item: PortfolioItem) => console.log('clicked', item);

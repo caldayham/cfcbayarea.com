@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
-import HookBanner from '@/components/HookBanner';
+import HookBanner from '@/components/About_Components/HookBanner';
 
 export default function About() {
   return (
@@ -17,10 +16,18 @@ export default function About() {
           </h2>
           <div className="bg-gray p-6 sm:p-8 rounded-lg shadow-sm">
             <p className="text-secondary leading-relaxed mb-6">
-              We're Cal and Fynn, two brothers who love design and construction and decided to turn it into a part-time summer job! Personal design, quality construction. 
+              We're Cal and Fynn, two brothers who were asked to help build a garden box in May, posted the finished pictures on Nextdoor, and haven't sat down since! 
             </p>
             <p className="text-secondary leading-relaxed">
-              Cal brings landscape design expertise, while Fynn contributes his engineering background…
+              Most homeowners have a handful of small to medium projects they're looking to get done, but haven't gotten around to. 
+              The issue with these projects is described in their name - small (meaning low profit opportunity as )
+              
+              Going from idea to solution can be a difficult endevor, oftentimes factors are left out of consideration, this leaves homeowners 
+              between a rock and a hard place, 
+              Especially for small to medium projects that larger companies simply can't take on for a fair price
+            </p>
+            <p>
+
             </p>
           </div>
         </div>
