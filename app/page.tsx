@@ -16,18 +16,23 @@ export default function About() {
           </h2>
           <div className="bg-gray p-6 sm:p-8 rounded-lg shadow-sm">
             <p className="text-secondary leading-relaxed mb-6">
-              We're Cal and Fynn, two brothers who were asked to help build a garden box in May, posted the finished pictures on Nextdoor, and haven't sat down since! 
+              CFC (Cal & Fynn Construction) is a small design-build company started by two Palo Alto brothers, Cal and Fynn.
             </p>
-            <p className="text-secondary leading-relaxed">
-              Most homeowners have a handful of small to medium projects they're looking to get done, but haven't gotten around to. 
-              The issue with these projects is described in their name - small (meaning low profit opportunity as )
-              
-              Going from idea to solution can be a difficult endevor, oftentimes factors are left out of consideration, this leaves homeowners 
-              between a rock and a hard place, 
-              Especially for small to medium projects that larger companies simply can't take on for a fair price
+            <p className="text-secondary leading-relaxed mb-6">
+              CFC specializes in those small to medium scale projects that require enough expertise, time, and labor to never make it off the todo list,
+              but are not quite large enough for big companies to take your project seriously or at a fair price.
             </p>
-            <p>
-
+            <p className="text-secondary leading-relaxed mb-6">
+              Their discomfort is where CFC thrives! Having both grown up in their fathers workshop, Cal and Fynn have an intuitive understanding of how to economically create
+              outdoor assemblies that last.
+            </p>
+            <p className="text-secondary leading-relaxed mb-6">
+              This intuition, in combination with their clear communication, festidious planning, viewing problems simply as new data - not a personal offense,
+              and a devotion to client satisfaction that will leave you thinking you got an epic deal, makes them the best choice tackle your
+              small to medium custom outdoor projects.
+            </p>
+            <p className="text-secondary leading-relaxed mb-6">
+              Additionally, Cal has profesional experience as a landscape designer at System Pavers, a nationally-scaled hardscaping company, and brings that design and industry experience to every consultation and job.
             </p>
           </div>
         </div>
@@ -41,7 +46,7 @@ export default function About() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: '🏗️', title: 'Custom Fences & Gates', desc: 'Unique designs tailored to your property and style preferences.' },
+              { icon: '🏗️', title: 'Custom Garden Boxes', desc: 'Unique designs tailored to your property and style preferences.' },
               { icon: '🐔', title: 'Chicken Coops', desc: 'Functional and beautiful homes for your backyard flock.' },
               { icon: '🔨', title: 'Custom Projects', desc: 'Small to medium builds that require a personal touch.' }
             ].map((item) => (
@@ -67,7 +72,7 @@ export default function About() {
             {[
               ['Free Consultation', 'We visit your site to understand your vision and assess the project scope.'],
               ['Detailed Planning', 'We create comprehensive construction plans and provide transparent pricing.'],
-              ['Quality Construction', 'We source materials and build your project with attention to every detail.']
+              ['Quality Construction', 'We source materials and build your project with clear communication and flexibilty.']
             ].map(([title, desc], idx) => (
               <div key={idx} className="flex items-start space-x-4">
                 <div className="w-9 h-9 bg-accent text-white rounded-full flex items-center justify-center font-bold shadow-sm">
