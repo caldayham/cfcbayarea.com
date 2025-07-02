@@ -27,12 +27,8 @@ export default function About() {
               outdoor assemblies that last.
             </p>
             <p className="text-secondary leading-relaxed mb-6">
-              This intuition, in combination with their clear communication, festidious planning, viewing problems simply as new data - not a personal offense,
-              and a devotion to client satisfaction that will leave you thinking you got an epic deal, makes them the best choice tackle your
-              small to medium custom outdoor projects.
-            </p>
-            <p className="text-secondary leading-relaxed mb-6">
-              Additionally, Cal has profesional experience as a landscape designer at System Pavers, a nationally-scaled hardscaping company, and brings that design and industry experience to every consultation and job.
+              This intuition, in combination with an eye for design, clear communication, bright attitude, and the right balance of personal and professional, makes them a spectacular choice 
+              for constructing your small to medium custom outdoor projects.
             </p>
           </div>
         </div>

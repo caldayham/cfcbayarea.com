@@ -49,6 +49,11 @@ const JobMap = () => {
     if (!mapInstanceRef.current && mapRef.current && isLeafletLoaded) {
       // Dynamically import Leaflet to avoid SSR issues
       import('leaflet').then((L) => {
+
+        // Better detection: Check if it's primarily a mobile device
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+          (navigator.maxTouchPoints > 1 && window.innerWidth < 1024);
+
         // Initialize map centered on Palo Alto with scroll zoom disabled
         const map = L.map(mapRef.current!, {
           scrollWheelZoom: false,
@@ -56,7 +61,7 @@ const JobMap = () => {
           touchZoom: true,
           boxZoom: true,
           keyboard: true,
-          dragging: false,
+          dragging: !isMobile,
         }).setView([37.4419, -122.1430], 11);
 
         // Add OpenStreetMap tiles
@@ -66,7 +71,7 @@ const JobMap = () => {
 
         // Multiple ways to detect when map is ready
         let tilesLoaded = false;
-        
+
         // Method 1: Tile layer load event
         tileLayer.on('load', () => {
           if (!tilesLoaded) {
@@ -74,7 +79,7 @@ const JobMap = () => {
             setTimeout(() => setIsMapLoaded(true), 100);
           }
         });
-        
+
         // Method 2: Map ready event
         map.whenReady(() => {
           setTimeout(() => {
@@ -133,12 +138,12 @@ const JobMap = () => {
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="relative" style={{ minHeight: '400px' }}>
           {/* Map container - always rendered */}
-          <div 
-            ref={mapRef} 
+          <div
+            ref={mapRef}
             className="w-full h-64 relative z-10"
             style={{ minHeight: '400px' }}
           />
-          
+
           {/* Loading visual overlay - shown when map is not loaded */}
           {!isMapLoaded && (
             <div className="absolute inset-0 z-20 bg-white">
@@ -146,7 +151,7 @@ const JobMap = () => {
             </div>
           )}
         </div>
-        
+
         <div className="p-4 bg-gray-50 border-t border-gray-200">
           <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
             <div className="flex items-center">
