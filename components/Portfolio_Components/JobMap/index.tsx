@@ -129,9 +129,9 @@ const JobMap = () => {
   }, [jobLocations, isLeafletLoaded]);
 
   return (
-    <div className="w-full max-w-4xl mx-auto pt-10">
+    <div className="w-full max-w-4xl mx-auto pt-10 px-5">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="relative px-1" style={{ minHeight: '400px' }}>
+        <div className="relative" style={{ minHeight: '400px' }}>
           {/* Map container - always rendered */}
           <div 
             ref={mapRef} 

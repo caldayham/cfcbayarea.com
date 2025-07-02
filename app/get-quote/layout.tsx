@@ -1,4 +1,4 @@
-import HoveringProgressBar from '@/components/GetQuote_Components/HoveringProgressBar';
+import ProgressBar from '@/components/GetQuote_Components/ProgressBar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,7 +13,6 @@ export default function PortfolioLayout({
 }) {
   return (
     <>
-      <HoveringProgressBar />
       {children}
     </>
   );

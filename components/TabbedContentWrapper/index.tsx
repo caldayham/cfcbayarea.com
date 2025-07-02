@@ -20,7 +20,6 @@ export default function TabbedContentWrapper({
         style={{ borderRadius: 'calc(var(--radius) - 4px)' }}
       >
         {children}
-        <Spacer height={60}/>
       </main>
 
       {/* floating centred tabs */}
