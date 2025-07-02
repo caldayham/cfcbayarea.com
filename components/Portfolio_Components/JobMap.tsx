@@ -46,7 +46,8 @@ const JobMap = () => {
           doubleClickZoom: true,
           touchZoom: true,
           boxZoom: true,
-          keyboard: true
+          keyboard: true,
+          dragging: false,
         }).setView([37.4419, -122.1430], 11);
 
         // Add OpenStreetMap tiles
@@ -116,9 +117,7 @@ const JobMap = () => {
               <div className="w-3 h-3 bg-accent rounded-full mr-2"></div>
               <span>Project Location</span>
             </div>
-            <span>•</span>
-            <span>Serving the Greater Bay Area</span>
-            <span>•</span>
+            <span>||</span>
             <span className="text-xs text-muted">Map data © OpenStreetMap</span>
           </div>
         </div>
