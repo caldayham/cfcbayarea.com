@@ -7,7 +7,7 @@ import CTAButton from '../CTAButton';
 const HookBanner = () => {
   return (
     <div className="min-h-screen px-4 md:px-12 bg-white bg-grid flex items-center">
-      <div className="max-w-6xl mx-auto pb-20 flex flex-col md:flex-row items-center gap-16 pt-12 md:pt-0">
+      <div className="max-w-6xl mx-auto pb-20 flex flex-col md:flex-row items-center gap-5 pt-8 md:pt-0">
 
         {/* Left: Text */}
         <div className="w-full md:basis-1/2 lg:basis-[60%] text-center md:text-left">
