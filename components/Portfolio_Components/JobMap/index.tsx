@@ -1,11 +1,14 @@
 'use client';
 
-import React, { useEffect, useRef, useMemo } from 'react';
+import React, { useEffect, useRef, useMemo, useState } from 'react';
 import type * as L from 'leaflet';
+import MapLoadingVisual from './MapLoadingVisual';
 
 const JobMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
+  const [isLeafletLoaded, setIsLeafletLoaded] = useState(false);
 
   // Sample job locations around Palo Alto Bay Area - memoized to prevent re-renders
   const jobLocations = useMemo(() => [
@@ -28,6 +31,11 @@ const JobMap = () => {
     link.crossOrigin = '';
     document.head.appendChild(link);
 
+    // Set loaded state after CSS is loaded
+    link.onload = () => {
+      setIsLeafletLoaded(true);
+    };
+
     return () => {
       // Cleanup: remove the link when component unmounts
       if (document.head.contains(link)) {
@@ -35,9 +43,10 @@ const JobMap = () => {
       }
     };
   }, []);
+
   useEffect(() => {
-    // Only initialize if we haven't already and the ref exists
-    if (!mapInstanceRef.current && mapRef.current) {
+    // Only initialize if we haven't already, the ref exists, and Leaflet CSS is loaded
+    if (!mapInstanceRef.current && mapRef.current && isLeafletLoaded) {
       // Dynamically import Leaflet to avoid SSR issues
       import('leaflet').then((L) => {
         // Initialize map centered on Palo Alto with scroll zoom disabled
@@ -51,9 +60,32 @@ const JobMap = () => {
         }).setView([37.4419, -122.1430], 11);
 
         // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        const tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+        });
+
+        // Multiple ways to detect when map is ready
+        let tilesLoaded = false;
+        
+        // Method 1: Tile layer load event
+        tileLayer.on('load', () => {
+          if (!tilesLoaded) {
+            tilesLoaded = true;
+            setTimeout(() => setIsMapLoaded(true), 100);
+          }
+        });
+        
+        // Method 2: Map ready event
+        map.whenReady(() => {
+          setTimeout(() => {
+            if (!tilesLoaded) {
+              tilesLoaded = true;
+              setIsMapLoaded(true);
+            }
+          }, 500);
+        });
+
+        tileLayer.addTo(map);
 
         // Custom crimson marker icon
         const customIcon = L.divIcon({
@@ -78,6 +110,11 @@ const JobMap = () => {
         });
 
         mapInstanceRef.current = map;
+
+        // Fallback: if tiles don't trigger load event, show map after delay
+        setTimeout(() => {
+          setIsMapLoaded(true);
+        }, 3000);
       });
     }
 
@@ -86,39 +123,38 @@ const JobMap = () => {
       if (mapInstanceRef.current) {
         mapInstanceRef.current.remove();
         mapInstanceRef.current = null;
+        setIsMapLoaded(false);
       }
     };
-  }, [jobLocations]);
+  }, [jobLocations, isLeafletLoaded]);
 
   return (
     <div className="w-full max-w-4xl mx-auto pt-10">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        
-        <div className="relative px-1 z-10">
-          {/* Map container */}
+        <div className="relative px-1" style={{ minHeight: '400px' }}>
+          {/* Map container - always rendered */}
           <div 
             ref={mapRef} 
-            className="w-full h-64 z-10"
-            style={{ minHeight: '360px' }}
+            className="w-full h-64 relative z-10"
+            style={{ minHeight: '400px' }}
           />
           
-          {/* Loading overlay */}
-          <div className="absolute inset-0 bg-gray flex items-center justify-center pointer-events-none opacity-0" id="map-loading">
-            <div className="text-center">
-              <div className="text-2xl mb-2">🗺️</div>
-              <p className="text-muted">Loading map...</p>
+          {/* Loading visual overlay - shown when map is not loaded */}
+          {!isMapLoaded && (
+            <div className="absolute inset-0 z-20 bg-white">
+              <MapLoadingVisual />
             </div>
-          </div>
+          )}
         </div>
         
-        <div className="p-4 bg-gray border-t border-default">
-          <div className="flex items-center justify-center space-x-4 text-sm text-secondary">
+        <div className="p-4 bg-gray-50 border-t border-gray-200">
+          <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
             <div className="flex items-center">
-              <div className="w-3 h-3 bg-accent rounded-full mr-2"></div>
+              <div className="w-3 h-3 bg-red-600 rounded-full mr-2"></div>
               <span>Project Location</span>
             </div>
-            <span>||</span>
-            <span className="text-xs text-muted">Map data © OpenStreetMap</span>
+            <span>|</span>
+            <span className="text-xs text-gray-500">Map data © OpenStreetMap</span>
           </div>
         </div>
       </div>

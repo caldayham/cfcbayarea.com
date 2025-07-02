@@ -22,7 +22,7 @@ export default function FloatingTabs() {
 
   return (
     <div
-      className="pointer-events-auto flex gap-0"
+      className="pointer-events-auto flex gap-0 z-20"
       style={{
         position: 'absolute',
         left: '50%',
