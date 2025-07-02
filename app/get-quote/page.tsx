@@ -15,8 +15,8 @@ const page = () => {
 
       </div>
       {/**This is the slider form div, it contains the sliding content for each section of the form*/}
-      <div>
-
+      <div className='pt-40 pl-4'>
+      Sliding contact form coming soon!
       </div>
       {/**This is the action button div, it contains the scheduled action buttons, sometimes just the next button, sometimes both 
          * next and back buttons, sometimes submit and back button, and sometimes other action buttons

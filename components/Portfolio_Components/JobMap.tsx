@@ -99,7 +99,7 @@ const JobMap = () => {
           <div 
             ref={mapRef} 
             className="w-full h-64 z-10"
-            style={{ minHeight: '350px' }}
+            style={{ minHeight: '360px' }}
           />
           
           {/* Loading overlay */}
