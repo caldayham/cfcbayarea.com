@@ -18,10 +18,10 @@ interface ProgressBarProps {
  * 
  * Uses client-side only rendering to prevent hydration mismatches
  */
-const ProgressBar: React.FC<ProgressBarProps> = ({ 
-  currentStep, 
-  totalSlides, 
-  className = '' 
+const ProgressBar: React.FC<ProgressBarProps> = ({
+  currentStep,
+  totalSlides,
+  className = ''
 }) => {
   const [isClient, setIsClient] = useState(false);
 
@@ -51,7 +51,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
   // Add 1 to currentStep so that being on slide 1 shows some progress
   // This ensures the progress bar fills completely when reaching the success page
   const progressPercentage = ((currentStep + 1) / totalSlides) * 100;
-  
+
   // Ensure progress doesn't exceed 100%
   const clampedProgress = Math.min(progressPercentage, 100);
 
@@ -59,25 +59,27 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
     <div className={`w-full mb-6 ${className}`}>
       {/* Progress bar container with responsive padding - no extra margins */}
       <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg px-4 py-3 shadow-sm">
-        
+
         {/* Progress bar track - responsive width */}
         <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden mb-2">
           {/* Progress bar fill - animated */}
-          <div 
+          <div
             className="h-full rounded-full transition-all duration-500 ease-out bg-accent"
-            style={{ 
+            style={{
               width: `${clampedProgress}%`,
               // Fallback color if CSS variable not defined
               backgroundColor: clampedProgress > 0 ? 'var(--color-accent, #3b82f6)' : 'transparent'
             }}
           />
         </div>
-        
+
         {/* Bottom indicators */}
         <div className="flex justify-between items-center text-xs text-gray-500">
-          <span>{Math.round(clampedProgress)}% Complete</span>
           <span>
-            {currentStep === totalSlides - 1 ? 'Complete!' : `${totalSlides - currentStep - 1} questions remaining`}
+            {Math.round(clampedProgress)}% Complete
+          </span>
+          <span>
+            {currentStep === totalSlides - 1 ? 'Last Question' : `${totalSlides - currentStep - 1} questions remaining`}
           </span>
         </div>
       </div>

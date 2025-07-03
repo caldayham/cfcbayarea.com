@@ -1,6 +1,6 @@
 'use client';
 
-import portfolioData from '@/data/portfolioTestData.json';
+import portfolioData from './portfolioTestData.json';
 import PortfolioPreviewCard, { PortfolioItem } from '@/components/Portfolio_Components/PortfolioPreviewCard';
 import JobMap from '@/components/Portfolio_Components/JobMap';
 
@@ -13,7 +13,7 @@ export default function Portfolio() {
       <section className="py-10 px-4 md:px-8 bg-gray border-b border-default text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">Our Portfolio</h1>
         <p className="text-secondary max-w-2xl mx-auto">
-          Click on a pin to read more about the project or scroll down to our gallery!
+          Click on a pin to read more about the project or browse our gallery below!
         </p>
       </section>
       

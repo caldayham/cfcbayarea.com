@@ -8,54 +8,12 @@ If there's a project you haven't gotten around to yet feel free to leave your nu
 
 Cal is a graduate from the University of Minnesota with a degree in cell biology, and Fynn is a current undergraduate at Foothills college with a focus in engineering. Cal and Fynn grew up and their fathers workshop and have an intuitive understanding of the design / build process of physical structures.
 
-
-# ✅ CFC Website Development Checklist
-[cfcbayarea.com](https://cfcbayarea.com)
-
-### 🔧 Hook Banner & Before/After Carousel
-- [ ] Create clean before-and-after images for top 8 projects  
-  _(Ruthellen, Angela, Michelle, Kamala, Donna, Kay Marie, Amy + 1)_
-- [ ] Build a simple sliding carousel component for hook banner
-  - [ ] Uses `useState()` and `localStorage` to persist state
-  - [ ] Viewers can click an image to go to portfolio detail page
-  - [ ] Automatically rotates through current **Top 8** projects
-  - [ ] Older jobs get replaced over time as better ones are added
-
-### 📩 Rebuild “Get a Quote” Contact Form
-- [ ] Completely redesign the sliding form and page
-  - [ ] Build wireframe with `div`s, buttons, links, and styling comments
-  - [ ] Use Claude or ChatGPT to help structure Tailwind classes
-  - [ ] Create question array with:  
-    `title`, `description`, `outputType`, `HTML content`
-  - [ ] Use `useState()` and `localStorage` to manage form data
-  - [ ] Sync current step with state/local storage
-  - [ ] Add simple progress bar connected to form step
-  - [ ] Create Mongoose schema/model for new leads
-  - [ ] Send leads to Google Sheets via API _(or MongoDB as fallback)_
-  - [ ] Add short trust statement explaining data safety/privacy
-  - [ ] Add call-to-action or upsell at the end of form (product/shout-out/etc.)
-
-### 🗺️ Portfolio Map
-- [ ] Add interactive map to portfolio page
-  - [ ] Display general location of each project with pins
-  - [ ] Allow hover/click to reveal which portfolio item each pin corresponds to
-
-### 🖼️ Site Imagery
-- [ ] Replace placeholder images across the site with real project photos
-
-### 🗃️ Portfolio Items & Project Data
-- [ ] Create complete portfolio item schema/model
-- [ ] Create JSON data for 9 completed projects + upload images
-
-#### ✅ Projects to Document
-- [ ] Angela – Rinconada Box
-- [ ] Ruthellen – Redwood Garden Box
-- [ ] Peggy – Garden Gate Fix
-- [ ] Donna – Side Yard & Front Yard Clean
-- [ ] Michelle – Redwood Garden Box & Boulder Move
-- [ ] Kamala – _(add description)_
-- [ ] Kay Marie – _(_
-
+## Checklist
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
 
 
 ## About
@@ -72,7 +30,18 @@ This website showcases our construction and design services, featuring our portf
 - **TypeScript** - Type-safe JavaScript development
 - **React** - Modern UI framework
 - **Tailwind CSS** - Utility-first CSS framework
-- **Responsive Design** - Mobile-friendly across all devices
+- **Lucide Icons**
+- **Vercel Hosting**
+- **Next.js**
+- **ShadCN Components**
+- **Postman**
+- **MongoDB**
+- **Github**
+- **Namecheap DNS**
+- **Leaflet Maps**
+
+- **ChatGPT**
+- **Claude**
 
 ## Getting Started
 

@@ -317,7 +317,7 @@ const GetQuotePage = () => {
             {!isFirstSlide && !isSuccessSlide && (
               <FormActionButton>
                 <button onClick={handleBack}>
-                  Back
+                  {`<`}
                 </button>
               </FormActionButton>
             )}
