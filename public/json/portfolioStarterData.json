@@ -1,0 +1,414 @@
+[
+  {
+    "id": "1",
+    "title": "Rinconada Garden-Plot Renovation",
+    "slug": "rinconada-garden-plot-renovation",
+    "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    "city": "Palo Alto",
+    "location": [37.445, -122.138],
+    "completionDate": "2025-05-17",
+    "projectType": "Garden Renovation",
+    "description": "Complete overhaul for a near-delinquent garden plot at Rinconada Community Garden, from grassy space to pristine canvas!",
+    "review": "Cal and Fynn did a spectacular job cleaning up my garden plot, I love that I was able to put those old boards to great use!",
+    "reviewerName": "Sarah Martinez",
+    "rating": 5,
+    "seoTitle": "Garden Plot Renovation Palo Alto | CFC Design build Services",
+    "seoDescription": "Professional garden plot renovation at Rinconada Community Garden. From overgrown to pristine - see our complete transformation process.",
+    "seoKeywords": ["garden renovation", "palo alto", "community garden", "landscaping", "plot cleanup"],
+    "tags": ["renovation", "community garden", "eco-friendly", "recycling"],
+    "featured": true,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "intro-1",
+        "type": "text",
+        "order": 1,
+        "title": "The Challenge",
+        "content": {
+          "text": "When Sarah contacted us about her Rinconada Community Garden plot, it had been neglected for months. Weeds had taken over, old materials were scattered around, and the soil structure needed complete rehabilitation. Our goal was to transform this space into a productive, beautiful garden plot while reusing as many existing materials as possible."
+        }
+      },
+      {
+        "id": "before-after-1",
+        "type": "beforeAfter",
+        "order": 2,
+        "title": "The Transformation",
+        "content": {
+          "before": {
+            "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop",
+            "alt": "Overgrown garden plot with weeds and scattered materials",
+            "caption": "Before: Overgrown and neglected community garden plot"
+          },
+          "after": {
+            "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+            "alt": "Clean, organized garden plot with neat rows and pathways",
+            "caption": "After: Pristine garden plot ready for planting"
+          }
+        }
+      },
+      {
+        "id": "process-1",
+        "type": "text",
+        "order": 3,
+        "title": "Our Process",
+        "content": {
+          "text": "We started by clearing all vegetation and assessing the existing materials. The old wooden boards were in surprisingly good condition, so we cleaned and repurposed them for new raised bed borders. We then amended the soil with organic compost and created clear pathways for easy access to all planting areas."
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Raised 4x8 Backyard Redwood Garden Box",
+    "slug": "raised-4x8-backyard-redwood-garden-box",
+    "thumbnail": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop",
+    "city": "Mountain View",
+    "location": [37.386, -122.084],
+    "completionDate": "2025-04-22",
+    "projectType": "Garden Box",
+    "description": "Custom-built 4x8 raised garden bed using premium redwood lumber, perfect for growing vegetables and herbs in a compact backyard space.",
+    "review": "The garden box is absolutely perfect! The craftsmanship is excellent and it fits our space beautifully. Already planning our spring plantings!",
+    "reviewerName": "Mike Chen",
+    "rating": 5,
+    "seoTitle": "Custom 4x8 Redwood Garden Box Mountain View | CFC Construction",
+    "seoDescription": "Professional redwood raised garden bed construction in Mountain View. Custom 4x8 design perfect for vegetables and herbs. Quality craftsmanship guaranteed.",
+    "seoKeywords": ["raised garden bed", "redwood", "mountain view", "vegetable garden", "custom construction"],
+    "tags": ["redwood", "raised bed", "vegetables", "custom build"],
+    "featured": true,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "design-1",
+        "type": "text",
+        "order": 1,
+        "title": "Design & Planning",
+        "content": {
+          "text": "Mike wanted a raised garden bed that would maximize growing space while fitting perfectly in his compact backyard. We designed a 4x8 foot bed using premium redwood lumber, with 12-inch height for optimal root depth and excellent drainage."
+        }
+      },
+      {
+        "id": "materials-1",
+        "type": "text",
+        "order": 2,
+        "title": "Premium Materials",
+        "content": {
+          "text": "We used 2x12 redwood boards for the walls, with galvanized corner brackets for added strength. The bottom features landscape fabric to prevent weeds while allowing proper drainage. All hardware is stainless steel to prevent corrosion."
+        }
+      },
+      {
+        "id": "gallery-1",
+        "type": "gallery",
+        "order": 3,
+        "title": "Construction Process",
+        "content": {
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop",
+              "alt": "Redwood boards laid out for garden box construction",
+              "caption": "Premium redwood lumber ready for assembly"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+              "alt": "Assembled garden box frame",
+              "caption": "Sturdy frame with corner reinforcements"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop",
+              "alt": "Completed garden box filled with soil",
+              "caption": "Finished garden box ready for planting"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Sand & Stain Redwood Table Rejuvenation",
+    "slug": "sand-stain-redwood-table-rejuvenation",
+    "thumbnail": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&h=600&fit=crop",
+    "city": "Palo Alto",
+    "location": [37.429, -122.138],
+    "completionDate": "2025-03-15",
+    "projectType": "Furniture Restoration",
+    "description": "Professional restoration of a weathered redwood patio table, bringing it back to life with careful sanding and premium stain application.",
+    "review": "I can't believe this is the same table! It looks brand new and the stain color is exactly what I wanted. Great attention to detail.",
+    "reviewerName": "Jennifer Walsh",
+    "rating": 5,
+    "seoTitle": "Redwood Table Restoration Palo Alto | Wood Furniture Refinishing",
+    "seoDescription": "Expert redwood table sanding and staining services in Palo Alto. Professional furniture restoration that brings weathered wood back to life.",
+    "seoKeywords": ["redwood restoration", "table refinishing", "wood staining", "palo alto", "furniture repair"],
+    "tags": ["restoration", "redwood", "furniture", "staining"],
+    "featured": false,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "assessment-1",
+        "type": "text",
+        "order": 1,
+        "title": "Initial Assessment",
+        "content": {
+          "text": "Jennifer's redwood table had been exposed to Bay Area weather for several years without protection. The surface was gray and weathered, with some minor cracking and staining. Our assessment showed the underlying wood was still in excellent condition and perfect for restoration."
+        }
+      },
+      {
+        "id": "before-after-2",
+        "type": "beforeAfter",
+        "order": 2,
+        "title": "Dramatic Transformation",
+        "content": {
+          "before": {
+            "src": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&h=400&fit=crop&sat=-100",
+            "alt": "Weathered gray redwood table before restoration",
+            "caption": "Before: Weathered and gray from years of exposure"
+          },
+          "after": {
+            "src": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&h=400&fit=crop",
+            "alt": "Beautiful restored redwood table with rich stain",
+            "caption": "After: Rich, protected redwood finish"
+          }
+        }
+      },
+      {
+        "id": "process-2",
+        "type": "text",
+        "order": 3,
+        "title": "Restoration Process",
+        "content": {
+          "text": "We started with careful sanding using progressively finer grits to remove the weathered surface and reveal fresh wood underneath. After thorough cleaning, we applied a premium redwood stain that enhances the natural grain while providing UV protection for years to come."
+        }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Raised 5x6 Redwood Garden Box & 600lb Boulder Move",
+    "slug": "raised-5x6-redwood-garden-box-600lb-boulder-move",
+    "thumbnail": "https://images.unsplash.com/photo-1585336261021-d4874005a820?w=800&h=600&fit=crop",
+    "city": "Los Altos",
+    "location": [37.385, -122.114],
+    "completionDate": "2025-02-28",
+    "projectType": "Garden Box & Landscaping",
+    "description": "Custom 5x6 redwood raised garden bed construction combined with professional relocation of a 600-pound decorative boulder to create perfect garden focal point.",
+    "review": "CFC tackled both the garden box and the massive boulder move with such professionalism. The final result exceeded our expectations completely!",
+    "reviewerName": "David Rodriguez",
+    "rating": 5,
+    "seoTitle": "Custom Garden Box & Boulder Moving Los Altos | CFC Landscaping",
+    "seoDescription": "Professional 5x6 redwood garden box construction and 600lb boulder relocation in Los Altos. Expert landscaping services for unique garden projects.",
+    "seoKeywords": ["garden box", "boulder moving", "los altos", "redwood", "landscaping", "heavy lifting"],
+    "tags": ["redwood", "garden box", "boulder moving", "landscaping", "custom"],
+    "featured": true,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "challenge-1",
+        "type": "text",
+        "order": 1,
+        "title": "A Unique Challenge",
+        "content": {
+          "text": "David contacted us with an interesting project: he wanted a custom 5x6 garden bed, but there was a 600-pound decorative boulder in the perfect spot. Instead of working around it, we proposed relocating the boulder to create a stunning focal point adjacent to the new garden bed."
+        }
+      },
+      {
+        "id": "boulder-move",
+        "type": "text",
+        "order": 2,
+        "title": "Professional Boulder Relocation",
+        "content": {
+          "text": "Moving a 600-pound boulder requires specialized equipment and careful planning. We used professional moving dollies and leverage techniques to safely relocate the boulder without damaging the surrounding landscape or nearby plants."
+        }
+      },
+      {
+        "id": "gallery-2",
+        "type": "gallery",
+        "order": 3,
+        "title": "Project Gallery",
+        "content": {
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1585336261021-d4874005a820?w=400&h=300&fit=crop",
+              "alt": "Large boulder being moved with professional equipment",
+              "caption": "Carefully relocating the 600lb boulder"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop",
+              "alt": "Custom 5x6 redwood garden box construction",
+              "caption": "Building the custom 5x6 redwood garden bed"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+              "alt": "Completed garden with boulder as focal point",
+              "caption": "Final result: garden bed and boulder focal point"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Six Replacement Custom Window-Sill Planters",
+    "slug": "six-replacement-custom-window-sill-planters",
+    "thumbnail": "https://images.unsplash.com/photo-1463736932348-4915535cf85f?w=800&h=600&fit=crop",
+    "city": "Menlo Park",
+    "location": [37.454, -122.182],
+    "completionDate": "2025-01-10",
+    "projectType": "Custom Planters",
+    "description": "Precision-crafted replacement window-sill planters, custom-sized to fit perfectly and built with cedar for longevity and natural beauty.",
+    "review": "Each planter fits like it was made for that exact window - because it was! Beautiful craftsmanship and the cedar will age perfectly.",
+    "reviewerName": "Lisa Thompson",
+    "rating": 5,
+    "seoTitle": "Custom Window-Sill Planters Menlo Park | Cedar Planter Boxes",
+    "seoDescription": "Custom-built cedar window-sill planters in Menlo Park. Precision-crafted replacement planters designed for perfect fit and lasting beauty.",
+    "seoKeywords": ["window planters", "custom cedar planters", "menlo park", "window-sill boxes", "replacement planters"],
+    "tags": ["cedar", "custom planters", "window boxes", "precision fit"],
+    "featured": false,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "precision-1",
+        "type": "text",
+        "order": 1,
+        "title": "Precision Measurements",
+        "content": {
+          "text": "Lisa's home had six different window sizes, each requiring a perfectly fitted planter. We measured each window sill individually and created custom templates to ensure every planter would fit exactly right with proper drainage and stability."
+        }
+      },
+      {
+        "id": "materials-2",
+        "type": "text",
+        "order": 2,
+        "title": "Premium Cedar Construction",
+        "content": {
+          "text": "We chose premium cedar for its natural weather resistance and beautiful aging characteristics. Each planter features drainage holes, removable liners for easy plant changes, and subtle mounting brackets for secure installation."
+        }
+      },
+      {
+        "id": "installation",
+        "type": "text",
+        "order": 3,
+        "title": "Professional Installation",
+        "content": {
+          "text": "Installation required careful attention to ensure each planter was level and securely mounted. We used stainless steel hardware and added weather stripping where needed to protect both the planters and the window frames."
+        }
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Side Yard Extreme Pruning & Renovation",
+    "slug": "side-yard-extreme-pruning-renovation",
+    "thumbnail": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop&sat=-50",
+    "city": "Redwood City",
+    "location": [37.485, -122.236],
+    "completionDate": "2024-12-05",
+    "projectType": "Landscape Renovation",
+    "description": "Complete transformation of an overgrown side yard through strategic pruning, plant removal, and landscape restructuring to create usable outdoor space.",
+    "review": "I never thought this side yard could be salvaged! CFC turned what was basically a jungle into a beautiful, usable space. Amazing work!",
+    "reviewerName": "Robert Kim",
+    "rating": 5,
+    "seoTitle": "Side Yard Renovation Redwood City | Extreme Pruning Services",
+    "seoDescription": "Professional side yard renovation and extreme pruning in Redwood City. Transform overgrown landscapes into beautiful, usable outdoor spaces.",
+    "seoKeywords": ["side yard renovation", "extreme pruning", "redwood city", "landscape transformation", "overgrown yard"],
+    "tags": ["pruning", "renovation", "landscape design", "transformation"],
+    "featured": false,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "overgrown-1",
+        "type": "text",
+        "order": 1,
+        "title": "Tackling the Overgrowth",
+        "content": {
+          "text": "Robert's side yard had been neglected for years, with plants growing far beyond their intended boundaries. Shrubs had reached 12+ feet in height, blocking windows and creating dark, unusable space. Our plan involved strategic removal and aggressive pruning to reclaim the area."
+        }
+      },
+      {
+        "id": "before-after-3",
+        "type": "beforeAfter",
+        "order": 2,
+        "title": "Dramatic Before & After",
+        "content": {
+          "before": {
+            "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop&sat=-100&brightness=-20",
+            "alt": "Extremely overgrown side yard with tall shrubs blocking windows",
+            "caption": "Before: Completely overgrown and unusable side yard"
+          },
+          "after": {
+            "src": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop",
+            "alt": "Clean, well-maintained side yard with properly sized plants",
+            "caption": "After: Clean, open space with appropriately sized plantings"
+          }
+        }
+      },
+      {
+        "id": "sustainability",
+        "type": "text",
+        "order": 3,
+        "title": "Sustainable Approach",
+        "content": {
+          "text": "Rather than removing everything, we identified which plants could be salvaged through pruning and which needed complete removal. The result is a sustainable landscape that will be much easier to maintain while providing year-round visual interest."
+        }
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Quadruple-Door Squirrel Excluder",
+    "slug": "quadruple-door-squirrel-excluder",
+    "thumbnail": "https://images.unsplash.com/photo-1606567595334-d39972c85dbe?w=800&h=600&fit=crop",
+    "city": "Palo Alto",
+    "location": [37.441, -122.143],
+    "completionDate": "2024-11-18",
+    "projectType": "Pest Control Solution",
+    "description": "Innovative custom solution to prevent squirrels from accessing bird feeders while maintaining easy access for birds and homeowner maintenance.",
+    "review": "This is genius! The squirrels can't figure it out but the birds love it. Plus it looks great in our garden. Very creative solution!",
+    "reviewerName": "Patricia Williams",
+    "rating": 5,
+    "seoTitle": "Custom Squirrel-Proof Bird Feeder Palo Alto | Wildlife Solutions",
+    "seoDescription": "Innovative quadruple-door squirrel excluder for bird feeders in Palo Alto. Custom wildlife control solutions that work for both birds and homeowners.",
+    "seoKeywords": ["squirrel proof", "bird feeder", "palo alto", "wildlife control", "custom solution"],
+    "tags": ["wildlife control", "bird feeders", "custom solution", "innovative design"],
+    "featured": true,
+    "published": true,
+    "contentBlocks": [
+      {
+        "id": "problem-1",
+        "type": "text",
+        "order": 1,
+        "title": "The Squirrel Problem",
+        "content": {
+          "text": "Patricia loves feeding birds but was frustrated by persistent squirrels that would empty her feeders in minutes. Traditional squirrel-proof feeders hadn't worked, and she wanted a solution that would look attractive in her garden while being completely effective."
+        }
+      },
+      {
+        "id": "innovation",
+        "type": "text",
+        "order": 2,
+        "title": "Innovative Design",
+        "content": {
+          "text": "Our solution uses a quadruple-door system with weight-activated mechanisms. When a squirrel's weight is detected, all four doors close simultaneously. Birds, being much lighter, can access the feeder normally. The system is completely mechanical - no electricity required."
+        }
+      },
+      {
+        "id": "results",
+        "type": "text",
+        "order": 3,
+        "title": "100% Effective Results",
+        "content": {
+          "text": "Since installation, the feeder has been completely squirrel-free while maintaining full bird access. The cedar construction matches Patricia's garden aesthetic perfectly, and the easy-fill design makes maintenance simple. Even the most determined squirrels have given up!"
+        }
+      },
+      {
+        "id": "quote-1",
+        "type": "quote",
+        "order": 4,
+        "content": {
+          "text": "I've tried everything - spinning feeders, cages, different locations. This is the first solution that actually works 100% of the time. The birds are happy and the squirrels have moved on to someone else's yard!",
+          "author": "Patricia Williams",
+          "role": "Satisfied Customer"
+        }
+      }
+    ]
+  }
+]
